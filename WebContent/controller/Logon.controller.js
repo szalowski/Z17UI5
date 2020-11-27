@@ -1,4 +1,4 @@
-sap.ui.controller("z17ui5.Logon", {
+sap.ui.controller("controller.Logon", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -34,5 +34,8 @@ sap.ui.controller("z17ui5.Logon", {
 //	onExit: function() {
 //
 //	}
-
+	onButtonPress: function(oEvent) {
+		// do something special
+		oEvent.getSource();
+	}
 });
