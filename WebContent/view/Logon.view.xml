@@ -2,7 +2,7 @@
 		controllerName="controller.Logon" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Logon Page">
 		<content>
-			<Button text="Klick here!" press="onButtonPress" />
+			<Button text="Click here!" press="onButtonPress" />
 		</content>
 	</Page>
 </core:View>
