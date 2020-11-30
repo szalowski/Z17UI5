@@ -25,8 +25,16 @@ sap.ui.controller("controller.Logon", {
 	onSignIn: function(oEvent) {
 		// do something special
 		// oEvent.getSource();
-		alert("Implement Sign In Here!");
-		this._togglePages();
+		sP1 = this.getView().byId("password").getValue();
+		sP2 = this.getView().byId("passwor2").getValue();
+		if (sP1 !== undefined && sP2 !== undefined &&
+			sP1 !== "" && sP2 !== "" &&
+			sP1 === sP2) {
+			alert("Implement Sign In Here!");
+			this._togglePages();
+		} else {
+			alert("Passwords are not equal");
+		}
 	},
 	onSignInLink: function(oEvent) {
 		this._togglePages();
@@ -56,7 +64,6 @@ sap.ui.controller("controller.Logon", {
 		sInputValue = oEvent.getParameters().value;
 		this._updateModel("s" + sInputName, sInputValue);
 		this._checkModelValue(sInputName);
-
 	},
 	_checkModelValue: function(sName) {
 		oData = this.getView().getModel("viewModel").getData();

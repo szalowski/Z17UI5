@@ -4,11 +4,11 @@
 		<content>
 			<html:div>
 				<Label labelFor="Username" text="Username" />
-				<Input name="Username" placeholder="Username" value="{viewModel>/sUsername}" valueState="{viewModel>/sStateUsername}" valueStateText="{viewModel>/sStateTextUsername}" maxLength="{viewModel>/sMaxLengthUsername}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Text" />
+				<Input id="username" name="Username" placeholder="Username" value="{viewModel>/sUsername}" valueState="{viewModel>/sStateUsername}" valueStateText="{viewModel>/sStateTextUsername}" maxLength="{viewModel>/sMaxLengthUsername}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Text" />
 				<Label labelFor="Password" text="Password" />
-				<Input name="Password" placeholder="Password" value="{viewModel>/sPassword}" valueState="{viewModel>/sStatePassword}" valueStateText="{viewModel>/sStateTextPassword}" maxLength="{viewModel>/sMaxLengthPassword}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Password" />
+				<Input id="password" name="Password" placeholder="Password" value="{viewModel>/sPassword}" valueState="{viewModel>/sStatePassword}" valueStateText="{viewModel>/sStateTextPassword}" maxLength="{viewModel>/sMaxLengthPassword}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Password" />
 				<Label labelFor="Password2" text="Password again" />
-				<Input name="Password2" placeholder="Password again" value="{viewModel>/sPassword2}" valueState="{viewModel>/sStatePassword2}" valueStateText="{viewModel>/sStateTextPassword2}" maxLength="{viewModel>/sMaxLengthPassword}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Password" />
+				<Input id="passwor2" name="Password2" placeholder="Password again" value="{viewModel>/sPassword2}" valueState="{viewModel>/sStatePassword2}" valueStateText="{viewModel>/sStateTextPassword2}" maxLength="{viewModel>/sMaxLengthPassword}" liveChange="onLiveChange" valueLiveUpdate="true" required="true" type="Password" />
 				<Button text="Sign in" press="onSignIn" />
 			</html:div>
 		</content>
